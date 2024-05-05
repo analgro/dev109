@@ -8,7 +8,7 @@ body {
 	margin: 0px 0px 0px 0px;}
 
 h1 {
-	background-image: url('https://analgro.github.io/dev109/m05/bullseye-logo.png');
+	background-image: <img src="https://analgro.github.io/dev109/m05/bullseye-logo.png" alt="teacher">
 	background-repeat: no-repeat;
 	text-indent: 100%;
 	white-space: nowrap;
