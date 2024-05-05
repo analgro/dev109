@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bullseye! Tutoring</title>
+    <!-- Link to CSS file hosted on your site -->
+    <link rel="stylesheet" href="m05/css/c04.css" />
+  </head>
+  <body>
+    <section id="page2">
+      <h1>Bullseye</h1>
+      <!-- Section to display the multiplication table -->
+      <section id="blackboard"></section>
+    </section>
+    <!-- Link to JavaScript file hosted on your site -->
+    <script src="m05/js/example.js"></script>
+    <script>
+      // Prompt the user for a number between 0-10
+      var userInput = prompt("Enter a number between 0 and 10:");
+
+      // Convert user input to a number
+      var table = parseFloat(userInput);
+
+      // Initialize the variable msg with a heading for the table
+      var msg = '<h2>Multiplication Table for ' + table + '</h2>';
+
+      // Show the multiplication table
+      var i = 1; // Set counter to 1
+      while (i < 11) {
+        msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
+        i++;
+      }
+
+      // Write the message into the page
+      var el = document.getElementById('blackboard');
+      el.innerHTML = msg;
+    </script>
+  </body>
+</html>
 
