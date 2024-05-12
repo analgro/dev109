@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rhombus Generator</title>
+    <script src="your_js_file.js"></script>
+</head>
+<body>
+    <h1>Rhombus Generator</h1>
+    
+    <label for="rHeight">Height of each section of the rhombus:</label><br>
+    <input type="number" id="rHeight" value="5" min="1" max="20" required><br>
+    
+    <label for="colorEven">Color for even position:</label><br>
+    <select id="colorEven">
+        <option value="#0000FF">Blue</option>
+        <option value="#FF0000">Red</option>
+        <option value="#FF9900">Orange</option>
+    </select><br>
+    
+    <label for="colorOdd">Color for odd position:</label><br>
+    <select id="colorOdd">
+        <option value="#FF0099">Pink</option>
+        <option value="#33FF00">Green</option>
+        <option value="#660099">Purple</option>
+    </select><br>
+    
+    <label for="symbol">Symbol to be used:</label><br>
+    <select id="symbol">
+        <option value="*">*</option>
+        <option value="$">$</option>
+        <option value="@">@</option>
+    </select><br>
+    
+    <button onclick="createRhombus(
+        document.getElementById('rHeight').value,
+        document.getElementById('colorEven').value,
+        document.getElementById('colorOdd').value,
+        document.getElementById('symbol').value
+    )">Display Rhombus</button>
+    
+    <div id="upRight"></div>
+    <div id="downRight"></div>
+</body>
+</html>
 
