@@ -1,1 +1,71 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
+}
+
+#content {
+    overflow: auto;
+}
+
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+.column1 {
+    width: 31.3%;
+    height: 150px;
+    float: left;
+    margin: 1%;
+    background-color: #559FFF; 
+}
+
+.column2 {
+    width: 31.3%;
+    height: 150px;
+    float: left;
+    margin: 1%;
+    background-color: #FF7E55;
+}
+
+.column3 {
+    width: 31.3%;
+    height: 150px;
+    float: left;
+    margin: 1%;
+    background-color: #58FF55;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    padding: 0.5em 0;
+    background-color: #8655FF; /* Change background color for menu and footer */
+}
+
+#feature{
+    height: 10em;
+    margin-bottom: 1em;
+}
+
+#feature {
+   background-color: #BEFFF8;
+   background-image: url("data:image/png;base64,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");
+   background-size:contain;
+   background-position: right;
+   background-repeat:no-repeat;
+}
+
+h1 {
+    font-family: 'Code New Roman', Arial, Verdana, sans-serif; 
+}
 
