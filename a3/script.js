@@ -1,6 +1,6 @@
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
     var upRhombus = generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol);
-    var downRhombus = generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol, true); // Generate the bottom half with reverse ordering
+    var downRhombus = generateRhombus(pHeight, pColorEven, pColorOdd, pSymbol, true); 
 
     document.getElementById("upRight").innerHTML = upRhombus;
     document.getElementById("downRight").innerHTML = downRhombus;
