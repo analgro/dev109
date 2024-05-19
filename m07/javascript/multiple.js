@@ -12,6 +12,8 @@ function Hotel(name, rooms, booked) {
 // Create two hotel objects
 var quayHotel = new Hotel('Quay', 40, 25);
 var parkHotel = new Hotel('Park', 120, 77);
+var newHotel = new Hotel('Sunset', 80, 50);
+
 
 
 // Update the HTML for the page
@@ -24,6 +26,12 @@ var details2 = parkHotel.name + ' rooms: ';
     details2 += parkHotel.checkAvailability();
 var elHotel2 = document.getElementById('hotel2');
 elHotel2.textContent = details2;
+
+var details3 = newHotel.name + ' rooms: ';
+    details3 += newHotel.checkAvailability();
+var elHotel3 = document.getElementById('hotel3');
+elHotel3.textContent = details3;
+
 
 /* 
 NOTE: textContent does not work in IE8 or earlier
