@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="description" content="Artifact 04 - Contact Us">
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="art4.css" />
-        <title>Artifact 04</title>
-    </head>
-    <body>
-        <form id="myform" action="ty.html" onsubmit="isValid();">
-            <p>
-                <label for='FirstName'>First Name:</label>
-                <input type="text" id="FirstName" name="FirstName" />
-            </p>
-            <div class="warning" id="fname"></div>
-            
-            <p>
-                <input type="submit" id="submit" name="submit" value="Submit">
-            </p>
-        
-            <div class="warning" id="submiterror"></div>
-        
-        </form>
-
-        <script src="validator.js" type="text/javascript"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form onsubmit="return isValid(event);">
+        <div>
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" name="FirstName">
+            <div id="fname" class="warning"></div>
+        </div>
+        <div>
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" name="LastName">
+            <div id="lname" class="warning"></div>
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email">
+            <div id="emailError" class="warning"></div>
+        </div>
+        <div>
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" name="Phone">
+            <div id="phoneError" class="warning"></div>
+        </div>
+        <div>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username">
+            <div id="usernameError" class="warning"></div>
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password">
+            <div id="passwordError" class="warning"></div>
+        </div>
+        <div>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address">
+            <div id="addressError" class="warning"></div>
+        </div>
+        <div>
+            <label for="City">City:</label>
+            <input type="text" id="City" name="City">
+            <div id="cityError" class="warning"></div>
+        </div>
+        <div>
+            <label for="State">State:</label>
+            <input type="text" id="State" name="State">
+            <div id="stateError" class="warning"></div>
+        </div>
+        <div>
+            <label for="Country">Country:</label>
+            <input type="text" id="Country" name="Country">
+            <div id="countryError" class="warning"></div>
+        </div>
+        <div>
+            <label for="ZipCode">Zip Code:</label>
+            <input type="text" id="ZipCode" name="ZipCode">
+            <div id="zipcodeError" class="warning"></div>
+        </div>
+        <div id="submiterror" class="warning"></div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="javascript/<file_name>.js"></script>
+</body>
 </html>
