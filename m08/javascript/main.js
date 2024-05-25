@@ -13,7 +13,7 @@ var position = document.getElementsByTagName('ul')[0];
 // Insert the new element into its position.
 position.appendChild(newEl);
 
-// New JavaScript function to add items dynamically
+
 function addItem() {
     // Get the value from the input field
     var newItem = document.getElementById('newItem').value;
@@ -36,5 +36,7 @@ function addItem() {
 
         // Clear the input field
         document.getElementById('newItem').value = '';
+    } else {
+        console.log("Input is empty. No item added.");
     }
 }
