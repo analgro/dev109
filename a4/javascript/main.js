@@ -15,6 +15,8 @@ function isValid(event) {
 
     if (validFirstname && validLastname && validEmail && validPhone && validUsername &&
         validPassword && validAddress && validCity && validState && validCountry && validZipcode) {
+        // Redirect to thank you page if all validations pass
+        window.location.href = "thank_you.html";
         return true;
     } else {
         document.getElementById("submiterror").innerHTML = "<p><strong>Error Submitting — See Above</strong></p>";
