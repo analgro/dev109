@@ -1,17 +1,17 @@
 var myImages = [
     "images/cooldawg.jpg",
-    "images/cunfuseddawg.jpg",
-    "images/topofdawg.jpg",
-    "images/bignosedawg.jpg",
+    "images/confuseddawg.jpg", 
+    "images/topofdawg.jpg", 
+    "images/bignosedawg.jpg", 
     "images/thinkingdawg.jpg"
 ];
 
 var captionImages = [
-    "Dog is looking down towards the camera and looks super cool",
-    "Dog is looking at the camera in a confused manner",
-    "An image of only the top of the dogs head",
-    "Dog with a big nose",
-    "Dog is thinking of life choices"
+    "Description 1",
+    "Description 2",
+    "Description 3",
+    "Description 4",
+    "Description 5"
 ];
 
 var index = 0;
@@ -56,3 +56,4 @@ setInterval(autoSlide, 2000);
 
 // Show the first image
 updateImage();
+
