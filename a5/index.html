@@ -1,30 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slideshow</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Week #9 - Slideshow - YU2">
+    <meta charset="utf-8">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slideshow-container">
-        <img id="slide" src="img1.jpg" alt="Image 1">
-        <p id="description">Description for Image 1</p>
-        <button id="prev">Previous</button>
-        <button id="next">Next</button>
-    </div>
-
-    <!-- Add validators' icons -->
-    <div class="validators">
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01!" height="31" width="88">
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" height="31" width="88">
-        </a>
-    </div>
-
-    <script src="scripts.js"></script>
+    <h1>Slideshow</h1> 
+    <input id="auto" type="checkbox">Run automatically
+    <br><br> 
+    <img id="slideshow" src="images/image1.jpg" width="200" height="200" alt="Description 1">
+    <p id="caption">Description 1</p> 
+    <button id="previous">PREVIOUS</button>
+    <button id="next">NEXT</button> 
+ 
+    <script src="script.js"></script>
 </body>
 </html>
-
