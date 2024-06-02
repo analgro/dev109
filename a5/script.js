@@ -7,11 +7,11 @@ var myImages = [
 ];
 
 var captionImages = [
-    "Description 1",
-    "Description 2",
-    "Description 3",
-    "Description 4",
-    "Description 5"
+    "Dog looking at you upside down",
+    "Dog looking at you very confused",
+    "Only the top of the dog's head",
+    "Dog with a big nose",
+    "Dog thinking of all of their life choices"
 ];
 
 var index = 0;
