@@ -1,9 +1,9 @@
 const images = [
-    { src: 'cooldawg.jpg', desc: 'Description for Image 1' },
-    { src: 'confuseddawg.jpg', desc: 'Description for Image 2' },
-    { src: 'bignosedawg.jpg', desc: 'Description for Image 3' },
-    { src: 'topofdawg.jpg', desc: 'Description for Image 4' },
-    { src: 'thinkingdawg.jpg', desc: 'Description for Image 5' }
+    { src: 'a5/cooldawg.jpg', desc: 'Description for Image 1' },
+    { src: 'a5/confuseddawg.jpg', desc: 'Description for Image 2' },
+    { src: 'a5/bignosedawg.jpg', desc: 'Description for Image 3' },
+    { src: 'a5/topofdawg.jpg', desc: 'Description for Image 4' },
+    { src: 'a5/thinkingdawg.jpg', desc: 'Description for Image 5' }
 ];
 
 let currentIndex = 0;
