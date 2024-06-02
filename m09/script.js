@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.addEventListener("click", function(event) {
+        // Prevent creating dots when clicking on the form
+        if (event.target.closest('#controls')) return;
+
         var color = document.getElementById("color").value;
         var size = document.getElementById("size").value;
         
@@ -24,4 +27,3 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.appendChild(dot);
     });
 });
-
