@@ -1,25 +1,30 @@
+/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and general styles */
 body {
     font-family: 'Arial, sans-serif';
     line-height: 1.6;
-    background: #f4f4f4;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
 }
 
+/* Header and navigation styles */
 header {
-    background: #333;
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
     color: #fff;
     padding: 1rem 0;
+    text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    text-align: center;
+    padding: 0;
 }
 
 header nav ul li {
@@ -38,12 +43,14 @@ header nav ul li a:hover {
     color: #ff6f61;
 }
 
+/* Main content styles */
 main {
     padding: 2rem;
     max-width: 1100px;
     margin: 0 auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 main section {
@@ -59,6 +66,7 @@ main p {
     margin-bottom: 1rem;
 }
 
+/* Specific section styles */
 #features ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -72,16 +80,18 @@ main p {
     color: #ff6f61;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
     header nav ul li {
         display: block;
@@ -96,4 +106,3 @@ footer {
         padding: 1rem;
     }
 }
-
