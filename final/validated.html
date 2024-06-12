@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validated Pages</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .validation-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .validation-section div {
+            width: 45%;
+            margin: 20px 0;
+        }
+
+        .validation-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        @media (max-width: 768px) {
+            .validation-section div {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,8 +41,7 @@
                 <li><a href="artifacts.html">Artifacts</a></li>
                 <li><a href="modules.html">Modules</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="thankyou.html">Thank You</a></li>
-                <li><a href="creative.html">Creative</a></li>
+                <li><a href="creative.html">Book Nook</a></li>
                 <li><a href="validated.html">Validated</a></li>
             </ul>
         </nav>
@@ -26,26 +50,27 @@
     <main>
         <section id="validated">
             <h1>Validated Pages</h1>
-            <div style="display: flex;">
-                <div style="flex: 1; padding: 10px;">
+            <div class="validation-section">
+                <div>
                     <h2>HTML</h2>
-                    <!-- Add your HTML validation screenshots here -->
-                    <img src="images/index-validation.png" alt="Index HTML Validation">
-                    <img src="images/about-validation.png" alt="About HTML Validation">
-                    <!-- Add more screenshots as needed -->
+                    <img src="images/index-validation-html.png" alt="Index HTML Validation">
+                    <img src="images/about-validation-html.png" alt="About HTML Validation">
+                    <img src="images/courses-validation-html.png" alt="Courses HTML Validation">
+                    <img src="images/artifacts-validation-html.png" alt="Artifacts HTML Validation">
+                    <img src="images/modules-validation-html.png" alt="Modules HTML Validation">
+                    <img src="images/contact-validation-html.png" alt="Contact HTML Validation">
+                    <img src="images/creative-validation-html.png" alt="Creative HTML Validation">
                 </div>
-                <div style="flex: 1; padding: 10px;">
+                <div>
                     <h2>CSS</h2>
-                    <!-- Add your CSS validation screenshots here -->
-                    <img src="images/css-validation.png" alt="CSS Validation">
+                    <img src="images/index-validation-css.png" alt="Index CSS Validation">
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Ana Grosu. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
