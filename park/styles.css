@@ -1,1 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container a {
+    flex: 1 1 calc(25% - 20px); /* Adjust the percentage for the number of columns */
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+    .grid-container a {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container a {
+        flex: 1 1 100%;
+    }
+}
