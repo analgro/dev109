@@ -33,7 +33,7 @@ body {
 }
 
 .grid-container a {
-    flex: 1 1 calc(15% - 20px); /* Even smaller images */
+    flex: 1 1 calc(10% - 20px); /* Even smaller images */
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
@@ -54,7 +54,7 @@ body {
 /* Responsive layout for smaller screens */
 @media (max-width: 800px) {
     .grid-container a {
-        flex: 1 1 calc(25% - 20px);
+        flex: 1 1 calc(20% - 20px);
     }
 }
 
