@@ -34,6 +34,7 @@ body {
 .grid-item {
     break-inside: avoid;
     margin-bottom: 10px;
+    position: relative; /* Ensure the positioning context for the overlay */
 }
 
 .grid-item img {
@@ -51,7 +52,7 @@ body {
     text-align: center;
 }
 
-.grid-item::after {
+.grid-item img::after {
     content: "";
     position: absolute;
     top: 0;
@@ -64,12 +65,13 @@ body {
     border-radius: 15px;
 }
 
-.grid-item:hover::after {
+.grid-item img:hover::after {
     opacity: 1;
 }
 
 .grid-item img:hover {
     transform: scale(1.05);
+    filter: brightness(0.5); /* Darkens the image on hover */
 }
 
 /* Responsive layout for smaller screens */
