@@ -27,19 +27,21 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger images */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create flexible columns */
+    grid-auto-rows: 10px; /* Set the height of each row */
     gap: 20px; /* Space between items */
     padding: 0 20px;
 }
 
 .grid-item {
-    position: relative;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
 }
 
 .grid-item img {
     width: 100%;
+    height: auto;
     display: block;
     transition: transform 0.2s ease, filter 0.2s ease;
     border-radius: 15px;
@@ -57,27 +59,27 @@ body {
     filter: brightness(0.5); /* Darkens the image on hover */
 }
 
-/* Custom row spans for uneven layout */
+/* Custom heights for staggered layout */
 .grid-item:nth-child(1) {
-    grid-row: span 2; /* First item spans 2 rows */
+    grid-row: span 30; /* First item spans 30 rows */
 }
 
 .grid-item:nth-child(2) {
-    grid-row: span 3; /* Second item spans 3 rows */
+    grid-row: span 40; /* Second item spans 40 rows */
 }
 
 .grid-item:nth-child(3) {
-    grid-row: span 2; /* Third item spans 2 rows */
+    grid-row: span 35; /* Third item spans 35 rows */
 }
 
 .grid-item:nth-child(4) {
-    grid-row: span 3; /* Fourth item spans 3 rows */
+    grid-row: span 45; /* Fourth item spans 45 rows */
 }
 
 /* Responsive layout for smaller screens */
 @media (max-width: 800px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for medium screens */
     }
 }
 
