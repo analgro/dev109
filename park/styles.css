@@ -33,7 +33,7 @@ body {
 
 .grid-item {
     break-inside: avoid;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative; /* Ensure the positioning context for the overlay */
 }
 
