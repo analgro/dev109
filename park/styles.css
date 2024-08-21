@@ -27,19 +27,15 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for larger images */
-    grid-auto-rows: 10px; /* Control the row height */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger images */
     gap: 20px; /* Space between items */
     padding: 0 20px;
 }
 
 .grid-item {
-    break-inside: avoid;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .grid-item img {
@@ -63,19 +59,19 @@ body {
 
 /* Custom row spans for uneven layout */
 .grid-item:nth-child(1) {
-    grid-row: span 40; /* First item spans 40 rows */
+    grid-row: span 2; /* First item spans 2 rows */
 }
 
 .grid-item:nth-child(2) {
-    grid-row: span 50; /* Second item spans 50 rows */
+    grid-row: span 3; /* Second item spans 3 rows */
 }
 
 .grid-item:nth-child(3) {
-    grid-row: span 35; /* Third item spans 35 rows */
+    grid-row: span 2; /* Third item spans 2 rows */
 }
 
 .grid-item:nth-child(4) {
-    grid-row: span 45; /* Fourth item spans 45 rows */
+    grid-row: span 3; /* Fourth item spans 3 rows */
 }
 
 /* Responsive layout for smaller screens */
