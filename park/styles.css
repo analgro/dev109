@@ -27,14 +27,12 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* 8 columns */
-    grid-auto-rows: 10px; /* Controls the row height */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
     gap: 20px; /* Space between items */
     padding: 0 20px;
 }
 
 .grid-item {
-    break-inside: avoid;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -47,7 +45,6 @@ body {
     display: block;
     transition: transform 0.2s ease, filter 0.2s ease;
     border-radius: 15px;
-    grid-row: span 30; /* Span 30 rows, adjusts based on content height */
 }
 
 .grid-item p {
@@ -65,13 +62,12 @@ body {
 /* Responsive layout for smaller screens */
 @media (max-width: 800px) {
     .grid-container {
-        grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for medium screens */
     }
 }
 
 @media (max-width: 500px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on small screens */
     }
 }
-
